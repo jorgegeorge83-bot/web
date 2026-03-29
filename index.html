@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="estilos.css">
+
+  <title>Portafolio</title>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="contenedor">
+
+  <img class="img-cube" src="img/foto.JPEG">
+
+  <div class="texto">
+    <h1>Jorge Guzmán</h1>
+    <h2>Videógrafo</h2>
+
+    <p class="copy">
+      Videos de bodas y eventos con calidad cinematográfica
+    </p>
+
+    <div class="menu-hero">
+      <a href="#sobre-mi" class="btn-menu">Sobre mí</a>
+      <a href="#portafolio" class="btn-menu">Portafolio</a>
+      <a href="#contacto" class="btn-menu">Contacto</a>
+    </div>
+  </div>
+
+</header>
+
+<!-- SOBRE MI -->
+<section id="sobre-mi">
+  <p>
+    He trabajado en más de 100 bodas y eventos sociales, capturando momentos únicos con cámaras de última tecnología y tomas aéreas con dron. Cada proyecto es cuidadosamente filmado y editado para lograr un resultado cinematográfico de alta calidad, donde cada detalle importa. Mi enfoque está en entregar a los clientes un producto que cuente su historia de manera única y memorable, haciendo que cada evento se transforme en un recuerdo imborrable.
+  </p>
+</section>
+
+<!-- PORTAFOLIO -->
+<section id="portafolio">
+  <div class="container">
+    <h2 class="text-center mb-4">Portafolio</h2>
+    <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+
+      <!-- Video 1 -->
+      <div style="position:relative; width:30%;">
+        <!-- Miniatura sobre el video -->
+        <img src="img/foto angie.PNG" 
+             style="width:100%; cursor:pointer; position:absolute; top:0; left:0; z-index:2;" 
+             onclick="this.style.display='none'; this.nextElementSibling.play();">
+
+        <!-- Video -->
+        <video controls style="width:100%; display:block;">
+          <source src="video/angie.mp4" type="video/mp4">
+          Tu navegador no soporta este video.
+        </video>
+      </div>
+
+      <!-- Video 2 -->
+      <div style="position:relative; width:30%;">
+        <img src="img/daniel y alejandra.PNG" 
+             style="width:100%; cursor:pointer; position:absolute; top:0; left:0; z-index:2;" 
+             onclick="this.style.display='none'; this.nextElementSibling.play();">
+        <video controls style="width:100%; display:block;">
+          <source src="video/Daniel y Alejendra.MP4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 3 -->
+      <div style="position:relative; width:30%;">
+        <img src="img/carlos y paola.PNG" 
+             style="width:100%; cursor:pointer; position:absolute; top:0; left:0; z-index:2;" 
+             onclick="this.style.display='none'; this.nextElementSibling.play();">
+        <video controls style="width:100%; display:block;">
+          <source src="video/Carlos y Paola.MP4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="contacto" style="padding:100px 0; background-color:#1f2a45; color:white; font-family: 'Roboto', sans-serif;">
+  <div class="container text-center" style="max-width:600px; margin:0 auto;">
+    <h2 class="mb-4">Contacto</h2>
+
+    <!-- Información personal -->
+    <p style="margin-bottom:15px;">Email: 
+      <a href="mailto:tucorreo@dominio.com" style="color:white; text-decoration:none;">jeguzmanp2@gmail.com</a>
+    
+    <p style="margin-bottom:15px;">Teléfono: 
+      <a href="tel:+1234567890" style="color:white; text-decoration:none;">3138630457</a>
+    
+
+        </div>
+  </div>
+</section>
+
+    
+</script>
+</body>
+</html>

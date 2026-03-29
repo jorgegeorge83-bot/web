@@ -1,0 +1,116 @@
+
+body {
+  margin:0;
+  font-family: 'Playfair Display', sans-serif;
+  background:linear-gradient(90deg,#141e30,#243b55);
+  color:white;
+}
+
+/* CONTENEDOR */
+.contenedor {
+  justify-content: flex-start;
+  padding-left: 100px;
+}
+
+/* FOTO */
+.img-cube {
+  display: block;
+  width: 150px;
+  height:auto;
+  overflow: hidden;
+  border: 9px solid rgba(255, 255, 255);
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/* TEXTO */
+.texto {
+  text-align: left;
+}
+
+h1 {
+  color:white;
+}
+
+h2 {
+  letter-spacing: 2px;
+  color: lightgray;
+}
+
+h3 {
+  color: lightgray;
+}
+
+/* BOTONES */
+.menu-hero {
+  margin-top: 150px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-menu {
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.9);
+  color: #141e30;
+  transition: 0.3s;
+}
+
+.btn-menu:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-left: 100px;
+  padding-top: 80px;
+  height: 150vh;
+  position: relative;
+  background: 
+    linear-gradient(90deg, #141e30, #243b55),
+    url('cine.jpg') center/cover no-repeat;
+}
+
+/* SOBRE MI */
+#sobre-mi {
+  padding: 100px 100px;
+  min-height: 100vh;
+  background-color: #1f2a45;
+  color: white;
+}
+
+/* PORTAFOLIO */
+#portafolio {
+  padding: 120px 100px;
+  min-height: 100vh;
+  background-color: #243b55;
+  color: white;
+}
+
+/* MINIATURAS */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}
